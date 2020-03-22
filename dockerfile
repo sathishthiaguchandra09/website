@@ -1,3 +1,3 @@
-FROM sathishthiaguchandra09/webapp
+FROM /webapp
 ADD . /var/www/html
 
