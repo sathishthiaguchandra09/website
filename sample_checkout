@@ -9,12 +9,11 @@ pipeline{
                 git credentialsId: 'github', url: 'https://github.com/sathishthiaguchandra09/website.git'
                 echo "Welcome to declarative pipeline"
                 }
-             }
           }
         stage("MVN build"){
             steps{
                 sh "mvn clean package"
                 }
+            }
         }
-        
     }
