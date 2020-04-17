@@ -1,0 +1,3 @@
+[submodule "sample-project-maven"]
+	path = sample-project-maven
+	url = https://github.com/web3j/sample-project-maven.git
