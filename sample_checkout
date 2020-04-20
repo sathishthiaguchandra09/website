@@ -26,6 +26,7 @@ pipeline{
                     ssh ubuntu@3.21.113.238:/opt/tomcat8/bin/startup.sh
                    """
                 }
-          }                
+             } 
+           }                
         }
     }
