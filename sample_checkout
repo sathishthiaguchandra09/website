@@ -1,3 +1,4 @@
+currentBuild.displayName = "corona_mama-#"+currentBuild.number
 pipeline{
     agent any
     environment{
@@ -13,6 +14,7 @@ pipeline{
         stage("MVN build"){
             steps{
                 sh "mvn clean install"
+                sh "mv target/*.war target/webapp.war"
                 }
           }
         stage("deploy-dev"){
